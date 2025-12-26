@@ -4,8 +4,6 @@ My notes from reading **Metaprogramming Ruby 2** by Paolo Perrotta.
 
 ---
 
-## Contents
-
 ### [the_m_word.rb](the_m_word.rb)
 
 Metaprogramming = writing code that manipulates language constructs (variables, classes, methods) at runtime. 
