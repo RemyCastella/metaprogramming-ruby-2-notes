@@ -136,6 +136,7 @@ class Computer
             match_data = Regexp.last_match
             Computer.define_component(match_data[:component])
             #this allows use to remove the define_component calls
+            #is is also flexible in that new attributes to our data source will be accounted for automatically
         end
     end
 
@@ -158,3 +159,7 @@ c = Computer.new(42, ds)
 puts c.cpu
 puts c.mouse
 puts c.keyboard
+
+# Method missing
+
+# When we need to define many similar methods, we can use method missing to respond to calls (without defining the methods)
