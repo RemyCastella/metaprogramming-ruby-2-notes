@@ -356,7 +356,7 @@ end
 
 Three approaches:
 
-1. **Around Alias**: `alias_method :original, :method` then redefine
+1. **Around Alias**: `alias_method :new, :original` then redefine
 2. **Refinement Wrapper**: Call `super` in a refinement to invoke original
 3. **Prepend** (cleanest): Prepend a module that calls `super`
 
